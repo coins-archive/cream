@@ -23,7 +23,7 @@ Website
 
 Specs
 ------
-> Ticker: CRM<br/> [₢]
+> Ticker: CRM (₢)<br/> 
 > Version: 0.17.1.0<br/>
 > Algo: Skein<br/>
 > Block time: 4 min<br/>
