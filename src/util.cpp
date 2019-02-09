@@ -705,10 +705,10 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 
 fs::path GetDefaultDataDir()
 {
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Cream
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Cream
-    // Mac: ~/Library/Application Support/Cream
-    // Unix: ~/.cream
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Creamcoin
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Creamcoin
+    // Mac: ~/Library/Application Support/Creamcoin
+    // Unix: ~/.Creamcoin
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Cream";
