@@ -711,7 +711,7 @@ fs::path GetDefaultDataDir()
     // Unix: ~/.Creamcoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Cream";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "Creamcoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -721,10 +721,10 @@ fs::path GetDefaultDataDir()
         pathRet = fs::path(pszHome);
 #ifdef MAC_OSX
     // Mac
-    return pathRet / "Library/Application Support/Cream";
+    return pathRet / "Library/Application Support/Creamcoin";
 #else
     // Unix
-    return pathRet / ".cream";
+    return pathRet / ".Creamcoin";
 #endif
 #endif
 }
